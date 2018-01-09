@@ -1,8 +1,10 @@
-// Include the server in your file
-const server = require('server');
-const { get, post } = server.router;
+let express = require('express');
+let app = express();
 
-// Handle requests to the url "/" ( http://localhost:3000/ )
-server([
-  get('/', ctx => 'Hello world!')
-]);
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
