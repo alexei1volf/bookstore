@@ -6,7 +6,7 @@
   "author": "Volf",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.15.1",
+    "body-parser": "^1.18.2",
     "config": "^1.20.1",
     "express": "^4.16.2",
     "mongoose": "^4.4.15",

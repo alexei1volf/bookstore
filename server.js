@@ -1,10 +1,14 @@
 let express = require('express');
 let app = express();
+let bodyParser = require('body-parser');
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
+//routes
+//home
+app.get('/', (req, res) => res.json({message: "What do you want from me?"}));
+
+//get all todos
+app.get('/todo', function(req, res) {
+  res.json({todo: "go home, bitch!"});
 });
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
+app.listen(3000);
